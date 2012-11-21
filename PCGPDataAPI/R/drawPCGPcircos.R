@@ -1,5 +1,4 @@
 drawPCGPcircos  <- function(x){
-.getPCGPemail()
 PCGPsamplelist <- getPCGPsamplelist()
 
 if (missing(x)){
@@ -19,7 +18,7 @@ cat ("Please specify a single sample\n")
 if (length (samples) == 1){
 x <- samples
 file.name <- paste(sample (letters, 6), collapse="")
-download.file(paste(.getPCGPbaseURL(), "/patient/", x, "/circos-plot/medium.png?email=", .PCGPemail, sep=""), paste(getwd(), "/", file.name, ".png", sep=""), mode="wb", quiet=TRUE)
+download.file(paste(.getPCGPbaseURL(), "/patient/", x, "/circos-plot/medium.png", sep=""), paste(getwd(), "/", file.name, ".png", sep=""), mode="wb", quiet=TRUE)
 img <- readPNG(paste(getwd(), "/", file.name, ".png", sep=""), TRUE)
 
 plot(1:2, type="n", axes=FALSE, xlab="", ylab="", asp=1)

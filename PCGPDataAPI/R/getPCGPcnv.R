@@ -24,7 +24,7 @@ samples <- PCGPsamplelist[,"Patient"]
 if (length (samples) > 0){
 tables <- readHTMLTable(
 
-paste(PCGPbaseURL, "patient/", datatypeextension, "?r=&p=", paste(samples, collapse=","), "&email=", .PCGPemail, sep=""), stringsAsFactors=FALSE, as.is=TRUE
+paste(PCGPbaseURL, "patient/", datatypeextension, "?r=&p=", paste(samples, collapse=","), sep=""), stringsAsFactors=FALSE, as.is=TRUE
 
 )
 n.rows <- unlist(lapply(tables, function(t) dim(t)[1]))
@@ -41,5 +41,3 @@ cat ("No valid sample name provided\n")
 }
 
 }
-
-
