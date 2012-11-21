@@ -1,8 +1,8 @@
 Package: PCGPDataAPI
 Type: Package
-Title: PCGP Data API R package  
-Version: 0.1
-Date: 2012-01-11
+Title: PCGP Data API R package
+Version: 0.2
+Date: 2012-11-19
 Author: Steven W. Paugh <steven.paugh@stjude.org>
 Maintainer: Steven W. Paugh <steven.paugh@stjude.org>
 Depends: R (>= 1.8.0), XML, png
@@ -10,4 +10,4 @@ Description: This package contains an application programming interface (API) fo
 License: file LICENSE
 LazyLoad: yes
 LazyData: yes
-Packaged: 2012-01-09 17:33:07 UTC; spaugh
+Packaged: 2012-11-09 16:33:41 UTC; spaugh

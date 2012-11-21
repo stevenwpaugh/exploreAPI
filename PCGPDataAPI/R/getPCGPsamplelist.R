@@ -12,7 +12,7 @@ patients <- patients[[which.max(n.rows)]]
 
 colnames (patients) <- gsub ("\t", "", colnames(patients))
 colnames (patients) <- gsub ("\n", "", colnames(patients))
-patients <- subset (patients, patients$Cohort == "WGS")
+#patients <- subset (patients, patients$Cohort == "WGS")
 patients <- patients[,c("Patient", "Disease")]
 return (patients)
 }
