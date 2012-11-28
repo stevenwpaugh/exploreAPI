@@ -1,5 +1,5 @@
 .onLoad <-function(libname, pkgname){
-cat("Using PCGPDataAPI version 0.2\n")
+cat("Using PCGPDataAPI version 0.3\n")
 
 file.name <- paste(sample (letters, 6), collapse="")
 
@@ -18,7 +18,7 @@ if (!grepl("PCGPstartup.R", geterrmessage())){
 
 source("http://explore.pediatriccancergenomeproject.org/PCGPstartup.R")
 
-PCGPDataAPIStartup("PCGPDataAPI_0.2")
+PCGPDataAPIStartup("PCGPDataAPI_0.3")
 }
 unlink(paste(getwd(), file.name, sep="/"))
 rm(file.name)
