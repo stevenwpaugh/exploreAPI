@@ -1,9 +1,8 @@
 getPCGPsamplelist <- function(){
-.getPCGPemail()
-PCGPbaseURL <- .getPCGPbaseURL()
+PCGPbaseURL <- getPCGPbaseURL()
 patients <- readHTMLTable(
 
-paste(PCGPbaseURL, paste("allPatients?email=", .PCGPemail, collapse="", sep=""),  sep=""),
+paste(PCGPbaseURL, paste("allPatients", collapse="", sep=""),  sep=""),
 stringsAsFactors=FALSE, as.is=TRUE
 
 )
