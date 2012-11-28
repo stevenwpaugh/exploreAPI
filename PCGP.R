@@ -1,6 +1,5 @@
 pcgpinstall <- function(x){
 if (x == "PCGPDataAPI"){
-.getPCGPemail()
 download.file(paste("http://explore.pediatriccancergenomeproject.org/PCGPDataAPI_0.3.tar.gz"), paste(getwd(), "PCGPDataAPI_0.3.tar.gz", sep="/"), mode="wb")
 install.packages("XML")
 install.packages("png")
