@@ -4,7 +4,7 @@
 
 datatypeextension <- "cnv"
 
-PCGPbaseURL <- .getPCGPbaseURL()
+PCGPbaseURL <- getPCGPbaseURL()
 PCGPsamplelist <- getPCGPsamplelist()
 
 if (missing(x)){

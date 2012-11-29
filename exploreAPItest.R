@@ -11,12 +11,20 @@ install.packages("PCGPDataAPI_0.3.tar.gz", repos=NULL, type="source", lib=lib.lo
 require (PCGPDataAPI, lib.loc=lib.loc)
 dev.test <- TRUE
 
+getPCGPbaseURL()
 getPCGPsamplelist()
 
+drawPCGPcircos("SJTALL001")
 
-patients <- readHTMLTable(
+getPCGPdata("SJTALL001", datatype="sv")
+getPCGPdata("SJTALL001", datatype="cnv")
+getPCGPdata("SJTALL001", datatype="snv_indel")
 
-paste(PCGPbaseURL, paste("allPatients", collapse="", sep=""),  sep=""),
-stringsAsFactors=FALSE, as.is=TRUE
+getPCGPgenedata("EZH2")
 
-)
+head(getPCGPdata(datatype="sv"))
+head(getPCGPdata(datatype="snv_indel"))
+head(getPCGPdata(datatype="cnv"))
+
+
+

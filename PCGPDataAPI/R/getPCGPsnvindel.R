@@ -1,10 +1,8 @@
-
-
 .getPCGPsnvindel <- function (x){
 
 datatypeextension <- "snv-indel"
 
-PCGPbaseURL <- .getPCGPbaseURL()
+PCGPbaseURL <- getPCGPbaseURL()
 PCGPsamplelist <- getPCGPsamplelist()
 
 if (missing(x)){
@@ -25,7 +23,7 @@ samples <- PCGPsamplelist[,"Patient"]
 if (length (samples) > 0){
 tables <- readHTMLTable(
 
-paste(PCGPbaseURL, "patient/", datatypeextension, "?r=&p=", paste(samples, collapse=","), "&email=", .PCGPemail, sep=""), stringsAsFactors=FALSE, as.is=TRUE
+paste(PCGPbaseURL, "patient/", datatypeextension, "?r=&p=", paste(samples, collapse=","), sep=""), stringsAsFactors=FALSE, as.is=TRUE
  
 
 )

@@ -3,7 +3,7 @@
 
 datatypeextension <- "sv"
 
-PCGPbaseURL <- .getPCGPbaseURL()
+PCGPbaseURL <- getPCGPbaseURL()
 PCGPsamplelist <- getPCGPsamplelist()
 
 if (missing(x)){
@@ -25,7 +25,7 @@ if (length (samples) > 0){
 tables <- readHTMLTable(
 
 
-paste(PCGPbaseURL, "patient/", datatypeextension, "?r=&p=", paste(samples, collapse=","), "&email=", .PCGPemail, sep=""), stringsAsFactors=FALSE, as.is=TRUE
+paste(PCGPbaseURL, "patient/", datatypeextension, "?r=&p=", paste(samples, collapse=","), sep=""), stringsAsFactors=FALSE, as.is=TRUE
 
 )
 n.rows <- unlist(lapply(tables, function(t) dim(t)[1]))

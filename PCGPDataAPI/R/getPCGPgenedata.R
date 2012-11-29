@@ -1,7 +1,6 @@
 
 getPCGPgenedata <- function (genesymbol){
-.getPCGPemail()
-PCGPbaseURL <- .getPCGPbaseURL()
+PCGPbaseURL <- getPCGPbaseURL()
 if (missing(genesymbol)){
 cat("Please specify a gene symbol.\n\nExample 1:
 getPCGPgenedata(\"EZH2\")
@@ -24,7 +23,7 @@ if (length(gene) == 1){
 
 genedata <- readHTMLTable(
 
-paste(PCGPbaseURL, "/gene/", gene, "?email=", .PCGPemail, sep=""),
+paste(PCGPbaseURL, "/gene/", gene, sep=""),
 stringsAsFactors=FALSE, as.is=TRUE
 )
 n.rows <- unlist(lapply(genedata, function(t) dim(t)[1]))

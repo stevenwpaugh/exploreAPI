@@ -1,9 +1,9 @@
 getPCGPgenelist <- function(){
 
-PCGPbaseURL <- .getPCGPbaseURL()
+PCGPbaseURL <- getPCGPbaseURL()
 genes <- readHTMLTable(
 
-paste(PCGPbaseURL, paste("gene/showgene/genesymbol?email=", .PCGPemail, collapse="", sep=""),  sep=""),
+paste(PCGPbaseURL, paste("gene/showgene/genesymbol", collapse="", sep=""),  sep=""),
 stringsAsFactors=FALSE, as.is=TRUE
 
 )

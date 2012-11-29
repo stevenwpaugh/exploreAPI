@@ -2,7 +2,7 @@ Package: PCGPDataAPI
 Type: Package
 Title: PCGP Data API R package
 Version: 0.3
-Date: 2012-11-21
+Date: 2012-11-29
 Author: Steven W. Paugh <steven.paugh@stjude.org>
 Maintainer: Steven W. Paugh <steven.paugh@stjude.org>
 Depends: R (>= 1.8.0), XML, png

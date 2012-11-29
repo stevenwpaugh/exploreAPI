@@ -1,6 +1,5 @@
 
 getPCGPdata <- function (samples, datatype){
-.getPCGPemail()
 if (missing(datatype)){
 cat("Please specify a valid datatype, choices are:\n\"sv\"\t\tStructural Variation
 \"snv_indel\"\tSingle Nucleotide Variant Insertions Deletions
