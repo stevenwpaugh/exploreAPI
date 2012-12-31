@@ -21,14 +21,13 @@ samples <- PCGPsamplelist[,"Patient"]
 }
 
 if (length (samples) > 0){
-tables <- readHTMLTable(
+snv.indel <- read.csv(
 
-paste(PCGPbaseURL, "patient/", datatypeextension, "?r=&p=", paste(samples, collapse=","), sep=""), stringsAsFactors=FALSE, as.is=TRUE
- 
+paste(PCGPbaseURL, "patient/", datatypeextension, ".csv?l2r=true&a=HG19&r=&t=&p=", paste(samples, collapse=","), sep=""), stringsAsFactors=FALSE, as.is=TRUE
 
 )
-n.rows <- unlist(lapply(tables, function(t) dim(t)[1]))
-snv.indel <- tables[[which.max(n.rows)]]
+#n.rows <- unlist(lapply(tables, function(t) dim(t)[1]))
+#snv.indel <- tables[[which.max(n.rows)]]
 
 colnames (snv.indel) <- gsub ("\n", "", colnames (snv.indel))
 colnames (snv.indel) <- gsub ("\t", "", colnames (snv.indel))

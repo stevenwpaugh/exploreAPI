@@ -11,8 +11,8 @@ The package serves as an API for PCGP data at explore.pediatriccancergenomeproje
 \tabular{ll}{
 Package: \tab PCGPData\cr
 Type: \tab Package\cr
-Version: \tab 0.3\cr
-Date: \tab 2012-11-21\cr
+Version: \tab 0.4\cr
+Date: \tab 2012-12-07\cr
 Depends: R (>= 1.8.0), XML, png
 License: \tab \cr
 LazyLoad: \tab yes\cr
