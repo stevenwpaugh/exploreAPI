@@ -21,13 +21,13 @@ cat("Data not currently available for specified gene, or invalid gene symbol spe
 
 if (length(gene) == 1){
 
-genedata <- readHTMLTable(
+genedata <- read.csv(
 
-paste(PCGPbaseURL, "/gene/", gene, sep=""),
+paste(PCGPbaseURL, "/gene/", gene, "/data.csv", sep=""),
 stringsAsFactors=FALSE, as.is=TRUE
 )
-n.rows <- unlist(lapply(genedata, function(t) dim(t)[1]))
-genedata <- genedata[[which.max(n.rows)]]
+#n.rows <- unlist(lapply(genedata, function(t) dim(t)[1]))
+#genedata <- genedata[[which.max(n.rows)]]
 
 
 colnames (genedata) <- gsub ("\t", "", colnames(genedata))
