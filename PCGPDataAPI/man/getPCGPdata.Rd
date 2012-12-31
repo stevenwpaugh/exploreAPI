@@ -9,7 +9,7 @@ This function will retrieve a variety of data from the PCGP data dashboard.
 
 
 \arguments{
-\item{sample}{Vector of sample(s) names that you wish to retrieve data for.  Leave blank for all samples}
+\item{sample}{Vector of sample(s) names that you wish to retrieve data for.  Leave blank for all samples, with the exception of datatype=cnv, which requires a sample}
 \item{datatype}{Datatype you wish to retrieve. Options are "sv", "cnv", "snv_indel"}
 }
 
