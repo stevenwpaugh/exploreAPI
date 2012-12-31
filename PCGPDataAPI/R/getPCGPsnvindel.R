@@ -23,8 +23,7 @@ samples <- PCGPsamplelist[,"Patient"]
 if (length (samples) > 0){
 snv.indel <- read.csv(
 
-paste(PCGPbaseURL, "patient/", datatypeextension, ".csv?l2r=true&a=HG19&r=&t=&p=", paste(samples, collapse=","), sep=""), stringsAsFactors=FALSE, as.is=TRUE
-
+paste(PCGPbaseURL, "patient/", datatypeextension, ".csv?l2r=true&a=HG19&r=&t=&p=", paste(samples, collapse=","), sep=""), stringsAsFactors=FALSE, as.is=TRUE, row.names=NULL
 )
 #n.rows <- unlist(lapply(tables, function(t) dim(t)[1]))
 #snv.indel <- tables[[which.max(n.rows)]]
