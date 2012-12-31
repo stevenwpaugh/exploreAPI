@@ -1,7 +1,8 @@
+dir.create("./exploreAPIlibloc", showWarnings = FALSE)
 lib.loc <- "./exploreAPIlibloc"
 
-install.packages("XML", lib=lib.loc)
-install.packages("png", lib=lib.loc)
+#install.packages("XML", lib=lib.loc)
+#install.packages("png", lib=lib.loc)
 
 require ("XML", lib.loc=lib.loc)
 require ("png", lib.loc=lib.loc)
@@ -25,6 +26,8 @@ getPCGPgenedata("EZH2")
 head(getPCGPdata(datatype="sv"))
 head(getPCGPdata(datatype="snv_indel"))
 head(getPCGPdata(datatype="cnv"))
+
+head(getPCGPdata("SJTALL002", datatype="cnv"))
 
 
 
