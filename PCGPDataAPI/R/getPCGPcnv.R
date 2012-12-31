@@ -8,7 +8,9 @@ PCGPbaseURL <- getPCGPbaseURL()
 PCGPsamplelist <- getPCGPsamplelist()
 
 if (missing(x)){
-samples <- unlist(PCGPsamplelist[,"Patient"])
+stop ("You must supply a sample name", call.=FALSE)
+#return("")
+#samples <- unlist(PCGPsamplelist[,"Patient"])
 }
 
 if (!missing(x)){
