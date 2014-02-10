@@ -1,6 +1,8 @@
 exploreAPI
 ==========
 
+[![Build Status](https://travis-ci.org/stevenwpaugh/exploreAPI.png?branch=master)](https://travis-ci.org/stevenwpaugh/exploreAPI)
+
 R package for accessing explore.pediatriccancergenomeproject.org data programatically through R
 
 Current version is 0.4, but tags for previous versions are availble
