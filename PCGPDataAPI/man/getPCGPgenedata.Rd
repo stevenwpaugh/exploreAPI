@@ -1,15 +1,15 @@
 \name{getPCGPgenedata}
 \alias{getPCGPgenedata}
 \title{
-Retrieve gene level data from the PCGP data dashboard
+  Retrieve gene level data from the PCGP data dashboard
 }
 \description{
-This function will retrieve the gene level data from the PCGP data dashboard.  
+  This function will retrieve the gene level data from the PCGP data dashboard.  
 }
 
 
 \author{
-Steven W. Paugh \email{steven.paugh@stjude.org}
+  Steven W. Paugh \email{steven.paugh@stjude.org}
 }
 
 

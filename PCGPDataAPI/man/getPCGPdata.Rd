@@ -1,22 +1,22 @@
 \name{getPCGPdata}
 \alias{getPCGPdata}
 \title{
-Retrieve data from the PCGP
+  Retrieve data from the PCGP
 }
 \description{
-This function will retrieve a variety of data from the PCGP data dashboard.
+  This function will retrieve a variety of data from the PCGP data dashboard.
 }
 
 
 \arguments{
-\item{sample}{Vector of sample(s) names that you wish to retrieve data for.  Leave blank for all samples, with the exception of datatype=cnv, which requires a sample}
-\item{datatype}{Datatype you wish to retrieve. Options are "sv", "cnv", "snv_indel"}
+  \item{sample}{Vector of sample(s) names that you wish to retrieve data for.  Leave blank for all samples, with the exception of datatype=cnv, which requires a sample}
+  \item{datatype}{Datatype you wish to retrieve. Options are "sv", "cnv", "snv_indel"}
 }
 
 
 
 \author{
-Steven W. Paugh \email{steven.paugh@stjude.org}
+  Steven W. Paugh \email{steven.paugh@stjude.org}
 }
 
 \examples{
